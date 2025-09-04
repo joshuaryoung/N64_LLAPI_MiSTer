@@ -829,7 +829,7 @@ always_comb begin
 			llapi_buttons[27], llapi_buttons[26], llapi_buttons[25], llapi_buttons[24] // d-pad
 		};
 		axis_ll_a_lx = llapi_analog[7:0] - 128; //Left stick X
-		axis_ll_a_ly = llapi_analog[15:8] - 128; //Left stick Y	
+		axis_ll_a_ly = llapi_analog[15:8] - 127; //Left stick Y	
 		end
 end
 
@@ -856,7 +856,7 @@ always_comb begin
 			llapi_buttons2[27], llapi_buttons2[26], llapi_buttons2[25], llapi_buttons2[24] // d-pad
 		};
 		axis_ll_b_lx = llapi_analog2[7:0] - 128; //Left stick X
-		axis_ll_b_ly = llapi_analog2[15:8] - 128; //Left stick Y	
+		axis_ll_b_ly = llapi_analog2[15:8] - 127; //Left stick Y	
 	end
 end
 
