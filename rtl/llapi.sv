@@ -268,7 +268,6 @@ always_ff @(posedge CLK_50M) begin
 			end else if (stage == CHECK_RUMBLE) begin
 				if (cycle > TIME_WAIT) begin
 					if (rumble_logic) begin // Let's get ready to...
-						// has_been_rumbling <= 1'b1;
 						cycle <= 0;
 						stage <= READ_IDLE;
 						state <= STATE_WRITE_START;
